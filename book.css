@@ -10,7 +10,15 @@ body{
 }
 }
 
-.one{
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #fff;
+    }
+
+    /* header container */
+    .one{
       max-width: 100%;
       margin: 12px auto;
       padding: 10px 16px;
@@ -249,5 +257,4 @@ form .closebtn1{
 }
 .popup2{
     display: none;
-
 }
