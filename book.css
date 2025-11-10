@@ -11,47 +11,53 @@ body{
 }
 
 .one{
-    background-color: #f6569f;
-    padding: 10px;
-    border-radius: 10px;
-    margin: 5px;
-}
-.home{
-    position: fixed;
-    top: 18px;
-    right: 430px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 5px;
-}
-.about{
-    position: fixed;
-    top: 18px;
-    right: 360px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 5px;
-}
-.contact{
-    position: fixed;
-    top: 18px;
-    right: 270px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 5px;
-}
-.login{
-    position: fixed;
-    top: 18px;
-    right: 190px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    padding: 5px;
-}
+      max-width: 100%;
+      margin: 12px auto;
+      padding: 10px 16px;
+      background-color: #f6569f;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; /* logo left, menu right */
+      gap: 16px;
+    }
+
+    .header {
+      color: #fff;
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: .4px;
+    }
+
+    /* menu as flex group on the right */
+    .menu {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+    }
+
+    /* each link */
+    .menu .link {
+      color: wheat;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 6px 8px;
+      border-radius: 6px;
+      cursor: pointer; /* pointer on hover */
+    }
+
+    .menu .link:hover {
+      background: rgba(255,255,255,0.08);
+      color: #fff;
+    }
+
+    /* small screen: stack vertically */
+    @media (max-width: 720px) {
+      .one { flex-direction: column; align-items: flex-start; gap: 10px; }
+      .menu { width:100%; justify-content: flex-start; gap:12px; flex-wrap:wrap; }
+      .header { font-size: 20px; }
+    }
 
 .container{
     padding: 20px;
@@ -243,4 +249,5 @@ form .closebtn1{
 }
 .popup2{
     display: none;
+
 }
