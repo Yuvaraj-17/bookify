@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookify</title>
+    <link rel="stylesheet" href="book.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div  class="one">
+        <table>
+            <tr>
+                <td><h1>BOOKWEB</h1></td>
+                <td class="home">Home</td>
+                <td class="about">About </td>
+                <td class="contact">Contact </td>
+                <td class="login"> LogIn</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container">
+        <div class="bookcontainer">
+            <h2>Rich Dad Poor Dad</h2>
+            <h4>Robert.T</h4>
+            <p>The author contrasts the financial philosophies of his biological father (“poor dad”) and his friend’s father (“rich dad”). He uses this contrast to highlight key ideas like building assets instead of liabilities, increasing your financial education (financial IQ), and thinking differently about money so you can achieve financial independence.</p>
+            <button type="button" id="readnowbtn">Read Now</button>
+            <button class="del" onclick="deleteBook(event)">Delete</button>
+        </div>
+    </div>
+        <button class="add-button" id="add-popup-button">+</button>
+        <div class="overlay"></div>
+            <div class="pop-up">
+                <h2>Add Book</h2>
+                <form>
+                    <textarea name="" id="bookname" placeholder="Enter the title of the book"></textarea>
+                    <textarea name="" id="authorname" placeholder="Enter the Author name"></textarea>
+                    <textarea name="" id="description" placeholder="Short Description About The Book"></textarea>
+                    <button class="btn1" id="addbook">Add Book</button>
+                    <button class="btn2" id="">Cancel</button>
+                    <button class="closebtn1" id="">x</button>
+                </form>
+            </div>
+        <div class="overlay2"></div>
+        <div class="popup2">
+            <form action="">
+            <table>
+                <tr><td><h1 id="titleofbook">Title Of The Book : <h2 style="color:#09a960;" >Rich Dad Poor Dad</h2></tr></td>
+                <tr> <td><h4 class="authspace" id="authorspace">Title of the author: <h4  class="authname">ROBERT.T</h4></h4></td></tr>
+            <tr><td><p id="descriptionbook">Description : <p style="color: #09a960;"> Rich Dad Poor Dad by Robert T. Kiyosaki is a powerful personal finance book that compares the money mindsets of two fathers — the author’s real dad, who was well-educated but financially struggling, and his friend’s dad, a successful businessman who never finished college. Through their contrasting lessons, Kiyosaki learns that wealth isn’t about how much you earn but how you think about money and how you make it work for you. The book explains that most people spend their lives working for money, while the rich make money work for them by building assets like businesses, investments, and real estate. Kiyosaki stresses the importance of financial education — something schools rarely teach — and encourages readers to learn how money, investing, and entrepreneurship actually work. He also highlights that buying liabilities such as cars or luxury items traps people in the “rat race,” whereas buying assets leads to financial freedom. The book motivates readers to overcome fear, take risks wisely, and develop financial intelligence instead of relying on a secure job. With its simple stories and easy concepts, Rich Dad Poor Dad has become one of the best-selling financial books in the world, inspiring millions to change how they view wealth, work, and success.</p></p></td></tr>
+            <tr><td><p >Price : <b>$99.99 </b> </p></td></tr>
+            <tr><td><p>Ratings: <b style="color: #09a960;">⭐4.9</b></p></td></tr>
+            <tr>
+                <td>
+                <h3 id="impact-title" >Impacts:</h3>
+                <p style="color:#09a960;">Rich Dad Poor Dad changed how millions of people think about money, work, and success. It became one of the best-selling personal finance books worldwide, starting a global financial literacy movement. The book inspired readers to focus on building assets instead of just saving, to invest wisely, and to make their money work for them. It encouraged people to shift their mindset from employee to entrepreneur, take smart risks, and seek financial freedom. Schools and financial educators around the world began using it as an introduction to personal finance. Its biggest impact is that it transformed how ordinary people view money — from surviving on paychecks to achieving independence through knowledge, courage, and smart investing.</p>
+                </td>
+            </tr>
+        </table>
+            </form>
+            <button  id="closebtn2">x</button>
+        </div>
+
+
+    <script src="book.js">
+
+    </script>
+</body>
+</html>

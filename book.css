@@ -1,0 +1,246 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+}
+
+.one{
+    background-color: #f6569f;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px;
+}
+.home{
+    position: fixed;
+    top: 18px;
+    right: 430px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+}
+.about{
+    position: fixed;
+    top: 18px;
+    right: 360px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+}
+.contact{
+    position: fixed;
+    top: 18px;
+    right: 270px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+}
+.login{
+    position: fixed;
+    top: 18px;
+    right: 190px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.container{
+    padding: 20px;
+    
+}
+.bookcontainer{
+    width: 25%;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    margin: 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+.bookcontainer h2{
+    color: #f6569f;
+}
+.bookcontainer h4{
+    padding: 5px;
+}
+.bookcontainer p{
+    padding: 5px;
+}
+.bookcontainer button{
+    margin: 5px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 10px;
+    
+
+}
+.bookcontainer button.del{
+    background-color: white;
+    color: black;
+    margin-left: 50px;
+}
+.bookcontainer button:hover{
+    cursor: pointer;
+    background-color: #f6569f;
+    color: black;
+}
+.bookcontainer button.del:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+.add-button{
+    background-color: #f6569f;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 150%;
+    position: fixed;
+    bottom: 150px;
+    right: 150px;
+    font-size: 30px;
+    color: white;
+}
+.add-button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: #f6569f;
+}
+.overlay{
+    background-color:black;
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.pop-up{
+    width: 40%;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 2;
+}
+form textarea{
+    display: block;
+    margin: 20px;
+    padding: 10px;
+    width: 80%;
+}
+form .btn1, form .btn2{
+    padding: 8px;
+    background-color: #f6569f;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+    margin: 10px;
+    margin-left: 20px;
+}
+form .closebtn1{
+    padding:10px;
+    background-color:red ;
+    border-radius:5px;
+    color:white;
+    font-size:15px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.btn1:hover, .btn2:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.705);
+    color: #f6569f;
+    
+}
+.overlay{
+    display: none;
+}
+.pop-up{
+    display: none;
+}
+
+.overlay2{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    z-index: 1;
+    
+}
+.popup2{
+    background-color:whitesmoke;
+    width: 70%;
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    border-radius:10px;
+    padding:20px;
+    z-index: 2;
+    height: 70%;
+    
+}
+.popup2 h1,.popup2 h4,.popup2 h3{
+    color: #f6569f;
+    margin-bottom: 20px;
+}
+.popup2 p{
+    margin-bottom: 20px;
+    color:#f6569f ;
+}
+.popup2 button{
+    padding:10px;
+    background-color:red ;
+    border-radius:5px;
+    color:white;
+    font-size:15px;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+}
+.popup2 textarea{
+    border-color: white;
+}
+.popup2 .authspace{
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 10px;
+}
+.popup2 .authname{
+    color: #09a960;
+    text-align: start;
+}
+.overlay2{
+    display: none;
+}
+.popup2{
+    display: none;
+}
